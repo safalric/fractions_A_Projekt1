@@ -37,6 +37,7 @@ class ParsingTest1
         assertEquals(
                 "0 / 1",
                 Fraction.parse("0/15").toString()
+
         );
     }
 }

@@ -17,6 +17,7 @@ class FractionTest3
                 "1 / 3",
                 new Fraction(1,2).add(new Fraction(-1,6)).toString()
         );
+
     }
 }
 

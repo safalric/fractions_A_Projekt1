@@ -28,6 +28,7 @@ class GcdTest1
         Assertions.assertEquals(15, NumericUtils.gcd(15, 15));
     }
 
+
     @org.junit.jupiter.api.Test
     void test_with_zero()
     {
