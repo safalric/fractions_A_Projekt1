@@ -1,5 +1,6 @@
 package pro1;
-import  org.junit.jupiter.api.Assertions;
+
+import org.junit.jupiter.api.Assertions;
 
 class FractionTest1
 {
@@ -7,7 +8,7 @@ class FractionTest1
     void test()
     {
         Assertions.assertEquals(
-                "72 / 150",
+                "12 / 25",
                 new Fraction(72,150).toString()
         );
     }

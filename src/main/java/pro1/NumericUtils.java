@@ -2,22 +2,20 @@ package pro1;
 
 public class NumericUtils
 {
-    /// @param a greater than 0
-    /// @param b greater than 0
-    public static long gcd(long a, long b){
-        long p = a;
-        long q = b;
-        while (true){
-            if(q==0)
-                return p;
-            long oldQ = q;
-            q = p % q;
-            p = oldQ;
+    // Eukleidův algoritmus, výsledek je vždy >= 0.
+    public static long gcd(long a, long b)
+    {
+        long p = Math.abs(a);
+        long q = Math.abs(b);
+
+        if (p == 0) return q;
+        if (q == 0) return p;
+
+        while (q != 0) {
+            long r = p % q;
+            p = q;
+            q = r;
         }
-// Alternativní rekurzivní řešení:
-//        if(b>0)
-//            return gcd(b,a%b);
-//        else
-//            return a;
+        return p;
     }
 }
